@@ -1,0 +1,25 @@
+a = 'hello pYTHON'
+print(a.upper()) #모두 대문자로
+print(a.lower()) #모두 소문자로
+print(a.capitalize()) #맨 첫 글자만 대문자로
+print(a.title()) #각 단어의 첫 글자만 대문자로
+print(a.replace('h','H')) #""안의 a를 b로 변환
+
+i = " g o o d  b y e "
+print(i.strip()) #앞뒤 공백제거
+print(i.lstrip()) #왼쪽 공백제거
+print(i.rstrip()) #오른쪽 공백제거
+
+print('a,b,c'.split(",")) #문자를 '리스트'로 변환
+print('c,a,b'.split(","))
+print('2,1,3'.split(","))
+
+print(",".join(["a","b","c"])) #리스트를 '문자'로 변환
+print(",".join(["c","a","b"]))
+print(",".join(["2","1","3"]))
+
+j = "banana"
+print(j.find("n")) #sub(n)의 첫 번째 위치 반환
+print(j.find("a"))
+print(j.count("a")) #sub(a)의 등장 횟수 반환
+print(j.count("n"))
