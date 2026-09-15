@@ -1,0 +1,67 @@
+#list_기본
+a = ['울과대', '컴공', '바보들', 'BFF']
+print(a)
+b = ['정다연', 160, 54]
+print(b)
+
+print("---------1")
+
+#list 길이
+print(len(a))
+
+print("---------2")
+
+#list_인덱스
+i = [1, 2, [10, 11, 13], 3]
+print(i[0])
+print(i[2])
+print(i[2][1])
+
+i[1] = 4
+print(i)
+
+i[2][2] = 20
+print(i)
+
+print("---------3")
+
+#list_'+'연산자.
+c = ['다연', '윤서', '보민', '보경']
+uc_c = a + c
+print(uc_c)
+c.extend(a)
+print(c)
+
+print("---------4")
+
+#list_'*'연산자.
+print(i*2)
+
+
+print("---------5")
+
+#list_함수
+j = ['빨', '주', '노', '초']
+print(j)
+
+j.append('흰') #맨 마지막에 입력 값 저장
+print(j)
+
+j.insert(5, '검') #지정한 인덱스 자리에 값 저장
+print(j)
+
+j.extend(['파', ['남', '보']]) #'+'연산자. 리스트 확장
+#j.insert(4, ['파', ['남', '보']])
+print(j)
+
+j.remove("흰") #'()' 안의 값을 찾아, 리스트내 첫 번째 값 삭제
+print(j)
+
+t = j.pop(4) #선택 인덱스 값 삭제 및 값 반환 (리스트에서 빼내오는 느낌)
+print(t, j)
+
+del j[5][1] #특정 요소 삭제
+print(j)
+
+j.clear() #리스트 요소 전체 삭제
+print(j)
