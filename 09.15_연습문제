@@ -1,0 +1,31 @@
+#연습문제
+print("---set 예제---")
+
+a = {34, 76, 12, 87, 49}
+b = {73, 81, 12, 34, 43}
+
+print(len(a|b)) #두 set의 원소의 개수
+print(a|b) #합집합
+print(a&b) #교집합
+print(a^b) #차집합
+
+c = (a|b) | a^b
+d = a|b
+
+print(c.isdisjoint(d)) #응용
+
+print("---list 예제---")
+i = [11, 83, 27, 44, 15]
+j = [63, 48, 92, 73, 64]
+
+k = i+j #두 리스트 합치기
+print(k)
+k.sort() #오름차순 정리
+print(k)
+k.reverse() #역순으로 바꾸기
+print(k)
+del k[5] #인덱스 5 삭제
+print(k)
+k.append(10) #10 추가
+print(k)
+print(k.count(20)) #20의 개수
