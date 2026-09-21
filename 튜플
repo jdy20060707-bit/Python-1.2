@@ -1,0 +1,25 @@
+#tulpe packing & unpacking
+
+tup = (1, 2, 3) #packing
+
+x, y, z = tup #unpacking_변수 각각에 튜플 요소 지정
+print(x)
+print(y)
+print(z)
+
+print("------1")
+
+#tuple과 list 간의 변환
+
+numList = [1, 2, 3] #llist -> tuple
+numTuple = tuple(numList)
+print(numTuple)
+
+numT = 1, 2, 3 #tuple -> list
+numL = list(numT)
+print(numL)
+
+print("------2")
+
+fruits = ("apple", "banana", "cherry")
+print(tuple(enumerate(fruits)))
