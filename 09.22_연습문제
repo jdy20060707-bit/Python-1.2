@@ -1,0 +1,54 @@
+j = input("주민등록번호 13자리를 입력 하시오.")
+
+if int(a[6])//2 == 0 :
+    print("여성")
+else :
+    print("남성")
+
+print("-----1-----")
+
+age = int(input("나이를 입력 하시오.: "))
+if age <= 6 :
+    print("무료 입장 입니다.")
+elif age <= 17 :
+    print("입장료 10,000원 입니다.")
+elif age <= 64 :
+    print("입장료 20,000원 입니다.")
+else :
+    print("무료 입장 입니다.")
+
+print("-----2-----")
+
+a = int(input("시험종류를 입력 하시오.(예시 : 1): "))
+b = int(input("점수를 입력 하시오.: "))
+
+if a == 1 :
+    if b >= 70 :
+        print("합격 입니다.")
+    else :
+        print("불합격 입니다.")
+elif a == 2 :
+    if b >= 60 :
+        print("합격 입니다.")
+    else :
+        print("불합격 입니다.")
+else:
+    print("형식에 맞지 않습니다. 다시 작성해 주세요.")
+
+print("-----3-----")
+
+a = int(input("시험종류를 입력 하시오.(예시 : 1): "))
+b = int(input("점수를 입력 하시오.: "))
+
+if a == 1 :
+    if b >= 70 :
+        print("합격 입니다.")
+    else :
+        print("불합격 입니다.")
+elif a == 2 :
+    if b >= 60 :
+        print("합격 입니다.")
+    else :
+        print("불합격 입니다.")
+else:
+    print("형식에 맞지 않습니다. 다시 작성해 주세요.")
