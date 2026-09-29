@@ -41,8 +41,8 @@ k = int(input("국어 시험 점수를 입력 하시오.: "))
 m = int(input("수학 시험 점수를 입력 하시오.: "))
 e = int(input("영어 시험 점수를 입력 하시오.: "))
 
-if a or b or c >= 40 :
-    if (a+b+c)/3 >= 60 :
+if k or m or e >= 40 :
+    if (k+m+e)/3 >= 60 :
         print("합격 입니다.")
     else :
         print("불합격 입니다.")
