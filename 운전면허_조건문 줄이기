@@ -1,0 +1,38 @@
+#조건문 2개
+type_1 = int(input("종을 입력하세요.(1, 2): "))
+score_1 = int(input("점수를 입력하세요.(0~100): "))
+
+if type_1 == 1:     #tpye_1이 1 이라면 cut = 70. 아니라면 cut = 60
+    cut_1 = 70
+else:
+    cut_1 = 60
+
+if score_1 >= cut_1:   #score_1이 위 조건문에서 결정된 cut 기준에 따라 score_1이 더 크거나 같으면 T
+    print("합격입니다.")
+else:
+    print("불합격입니다.")
+
+print("----------")
+
+#조건문 1개
+type_2 = int(input("종을 입력하세요.(1, 2): "))
+score_2 = int(input("점수를 입력하세요.(0~100): "))
+
+cut_2 = 80-10*type_2    # 70 or 60
+
+if score_2 >= cut_2:
+    print("합격니다.")
+else:
+    print("불합격입니다.")
+
+print("----------")
+
+#조건문 0개
+type_3 = int(input("종을 입력하세요.(1, 2): "))
+score_3 = int(input("점수를 입력하세요.(0~100): "))
+result = ["불합격입니다.", "합격입니다."]
+
+cut_3 = 80-10*type_3
+
+temp = score_3//cut_3   #내 점수를 기준점으로 몫나누기, 합격이면 1, 불합격이면 0
+print(result[temp])
