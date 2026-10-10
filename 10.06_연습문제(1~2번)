@@ -1,0 +1,43 @@
+#0이 입력될 때까지의 수를 입력받아, 입력 받은 수들의 합과 평균 출력.
+a = 1
+hap = 0
+count = 0
+
+while a!=0:
+    a = float(input("숫자를 입력하시오.: "))
+    hap = hap + a
+    count += 1
+
+    if count > 0:
+        print("합: ", hap)
+        print("평균: ", hap//count)
+    else:
+        print("입력된 값이 없습니다.")
+
+print("-----1-----")
+
+#0이 입력될 때까지의 수를 입력받아, 짝수와 홀수로 나눠 각각 크기 순으로 출력 후 각각의 합과 평균 출력.
+b = 1
+h = []
+j = []
+
+while b!=0:
+    b = float(input("숫자를 입력하세요: "))
+
+    if b%2 == 0:
+        j.append(b)
+    else:
+        h.append(b)
+
+    h.sort()
+    j.sort()
+
+    if len(j) > 0:
+        print(j)
+        print("짝수의 합: ", sum(j))
+        print("짝수의 평균: ", sum(j)/len(j))
+
+    if len(h) > 0:
+        print(h)
+        print("홀수의 합: ", sum(h))
+        print("홀수의 평균: ", sum(h) / len(h))
