@@ -1,0 +1,47 @@
+i = 1
+while i <= 5:
+    print("안녕하세요")
+    i += 1
+
+print("-----1-----")
+
+# 0을 입력 받을 때까지 입력받은 정수의 합 출력
+a = 1
+sum = 0
+while a!=0:
+    a = int(input("정수 입력"))
+    sum = sum + a
+print("입력한 수의 합은 %d"%sum)
+
+print("-----2-----")
+
+# break
+j = 1
+while j <= 10:
+    print(j)
+    j += 1
+    if j == 5:
+        break
+
+print("-----3-----")
+
+#무한루프
+h=0
+um=0
+while True:
+    h = int(input("정수를 입력하세요:"))
+    if h==0:
+        break
+    um = um+h
+print("입력한 정수의 합은 %d입니다"%um)
+
+print("-----4-----")
+
+# continue
+t = 0
+while t < 5:
+    t += 1
+    if t == 3:
+        continue
+    print(t)
+    #brak은 완전 중단. continue은 특정 값만 중단 후, 이어서 재출력.
