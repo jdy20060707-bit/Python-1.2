@@ -1,0 +1,34 @@
+#지정 범위 순차 출력
+i = 0
+
+for i in range(5):
+    print(i)
+
+print("-----1-----")
+
+#정해진 횟수 반복
+for i in range(1, 6):
+    print("안녕하세요.", i)
+
+print("-----2-----")
+
+#지정 범위 순차 출력_문자열의 문자 하나씩 출
+for c in "hellow":
+    print(c)
+
+print("-----3-----")
+
+#0~100 까지의 짝수의 합
+sum = 0
+for i in range(0, 101):
+    if i % 2 == 0:
+        sum += i
+        print(sum)
+
+print("-----6-----")
+
+#0~100 까지의 짝수의 합_if 없이
+sum = 0
+for i in range(0, 101, 2):
+    sum += i
+    print(sum)
