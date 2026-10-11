@@ -1,0 +1,24 @@
+# 0에서 100 사이 up / down 게임
+
+import random
+
+answer = random.randint(0,100) # 랜덤 정수 선택
+count = 0 # 횟수 저장 변수
+
+print("숫자를 맞춰보세요!")
+
+while True:
+    count += 1
+    i = int(input("0에서 100 사이 정수 입렵: "))
+
+
+    if i == answer:
+        print("정답 입니다!")
+        print("%d번 만에 맞추었습니다!" %count)
+        break
+
+    elif i > answer:
+        print("DOWN! 다시 도전하세요!")
+
+    elif i < answer:
+        print("UP! 다시 도전하세요!")
