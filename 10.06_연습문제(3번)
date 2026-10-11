@@ -1,0 +1,9 @@
+#몇 개의 숫잘르 입력 받을 것인지 정하고, 입력된 개수의 입력 받아 크기 순으로 출력.
+
+count = int(input("몇 개의 숫자를 입력 하실건가요: "))
+a = []
+
+for i in range(count):
+    a.append(int(input("입력한 개수의 숫자를 입력 하시오: ")))
+    a.sort()
+    print(a)
